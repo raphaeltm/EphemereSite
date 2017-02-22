@@ -1,15 +1,15 @@
 ---
-layout: page
 title: About
-permalink: /about/
+layout: page
+permalink: "/about/"
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+This is the glorious, majestic, and enthralling éphémère blog, by Raphaël Titsworth-Morin.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+Find out more about the services I offer [over here](https://raphaeltm.com).
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Subscribe to the podcast [over here](https://podcast.raphaeltm.com).
+
+Find all the cool products you need to get your online business off the ground [over here](https://i.justneedto.com).
+
+
