@@ -12,6 +12,7 @@ timezone: America/Vancouver
 gems:
 - jekyll-feed
 exclude:
+- vendor
 - Gemfile
 - Gemfile.lock
 defaults:
