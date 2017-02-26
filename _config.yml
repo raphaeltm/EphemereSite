@@ -7,10 +7,12 @@ baseurl: ''
 url: ''
 twitter_username: raphaeltm_
 markdown: kramdown
-theme: minima
 timezone: America/Vancouver
+paginate: 2
+paginate_path: "/page-:num/"
 gems:
 - jekyll-feed
+- jekyll-paginate
 exclude:
 - vendor
 - Gemfile
