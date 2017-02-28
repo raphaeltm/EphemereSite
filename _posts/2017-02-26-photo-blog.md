@@ -12,6 +12,8 @@ I’m going to start using this space to show and write about some of those imag
 
 Here’s the first set. These are going to be a few of my older shots, from when I first really started to get into photography.
 
+{% include wide_ad.html %}
+
 {% include image.html url="pups.jpeg" alt="pups" %}
 
 ## Emil and Lebo
