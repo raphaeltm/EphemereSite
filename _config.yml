@@ -8,7 +8,7 @@ url: ''
 twitter_username: raphaeltm_
 markdown: kramdown
 timezone: America/Vancouver
-paginate: 2
+paginate: 10
 paginate_path: "/page-:num/"
 gems:
 - jekyll-feed
