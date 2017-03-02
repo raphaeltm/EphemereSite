@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+title: My Journey to SmugMug
+date: '2016-04-07 00:11:22'
 ---
 I love photography.
 
