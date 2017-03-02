@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+title: Reorganizing My Digital Life
+date: '2016-04-06 00:11:22'
 ---
 I used to have a shared hosting account for my website.
 
@@ -7,7 +9,7 @@ Then I decided I wanted more control. As a web developer, I had moved beyond php
 
 I could install and run anything I wanted, and it was great.
 
-{% include "freeeagle.jpeg" caption="As free as this eagle I photographed last week. SO MUCH FREEDOM." alt="That's quite an eagle." %}
+{% include image.html url="freeeagle.jpeg" caption="As free as this eagle I photographed last week. SO MUCH FREEDOM." alt="That's quite an eagle." %}
 
 I had multiple WordPress installs going for myself, friends, and other people who I’d offered to help out. I also had a couple Django apps running, as well as some experiments with fully static websites, and I was toying with a few NoSQL databases and apps running off those. All this stuff was great and all, but I eventually realized that all I was really using it for was pretty much the same thing I had used the shared hosting for: my blog (on WordPress), and a sort of résumé page to let the world know who I am.
 
@@ -18,7 +20,7 @@ And I still think those projects were pretty cool.
 
 But there are plenty of people out there that are doing stuff that’s really cool. And they’re sharing it, for money or for other things (ad revenue, recognition, being awesome open source contributors, etc.). And in the meantime, my VPS became a mess of old projects that I rarely touched.
 
-{% include "freeeagle.jpeg" caption="TOO MUCH FREEDOM. The server kinda felt like this photo I took a few years ago in some random basement: a somewhat disturbing mess of random projects." alt="So messy." %}
+{% include image.html url="whatamess.jpeg" caption="TOO MUCH FREEDOM. The server kinda felt like this photo I took a few years ago in some random basement: a somewhat disturbing mess of random projects." alt="So messy." %}
 
 So I got rid of my VPS. And I’m in the process of moving my stuff elsewhere.
 
@@ -32,6 +34,6 @@ Now I’m moving my writing to Medium, my photos to SmugMug (that’s my referra
 
 All these services are really good at doing what they do, and have teams of people making sure they’re running properly. So instead of the mess I used to have, my domain now points to three, really well managed services, and I actually pay less per year for them than I did for the VPS.
 
-This is how I feel about it all today. Super serene and stuff. Like. Really really serene. No more mess. Finally. Like this photo I took somewhere in Nova Scotia. So. Serene.
+{% include image.html url="serenelandscape.jpeg" caption="This is how I feel about it all today. Super serene and stuff. Like. Really really serene. No more mess. Finally. Like this photo I took somewhere in Nova Scotia. So. Serene." alt="So serene." %}
 
 This is also how I feel about building software these days, but I’ll write another post about that later…
