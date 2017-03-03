@@ -1,0 +1,22 @@
+{
+  "name": "ephemereblog",
+  "homepage": "https://blog.ephemerecreative.ca",
+  "authors": [
+    "raphael titsworth-morin <raphael@raphaeltm.com>"
+  ],
+  "description": "the ephemere blog",
+  "main": "",
+  "license": "not sure",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "blockadblock": "^3.2.0",
+    "bootstrap-sass": "^3.3.7"
+  }
+}

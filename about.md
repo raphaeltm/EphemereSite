@@ -4,7 +4,7 @@ layout: page
 permalink: "/about/"
 ---
 
-This is the glorious, majestic, and enthralling éphémère blog, by Raphaël Titsworth-Morin.
+This is the glorious, majestic, and (obviously) enthralling [éphémère](https://ephemerecreative.ca) blog.
 
 Find out more about the services I offer [over here](https://raphaeltm.com).
 

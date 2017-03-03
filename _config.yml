@@ -1,15 +1,19 @@
 ---
-title: "éphémère blog"
-email: hello@raphaeltm.com
+title: "the éphémère blog"
+email: hello@ephemerecreative.com
 description: |
-  A blog about creative media.
+  A blog about creative media and a few other things. Photography, 
+  web development, media, design, art, the internet, and potatoes are all 
+  considered on-topic.
 baseurl: ''
 url: ''
 twitter_username: raphaeltm_
 markdown: kramdown
 timezone: America/Vancouver
-paginate: 10
+paginate: 6
 paginate_path: "/page-:num/"
+disqus:
+  shortname: ephemere-blog
 gems:
 - jekyll-feed
 - jekyll-paginate

@@ -7,14 +7,18 @@
 
     {% include header.html %}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+    <main class="container" aria-label="Content">
+      <div class="row">
+        <div class="col-xs-12">
+          {{ content }}
+        </div>
       </div>
     </main>
 
     {% include footer.html %}
 
+    <script type="text/javascript" src="/ads.js"></script>
+    <script type="text/javascript" src="{{ '/assets/main.js' | relative_url }}"></script>
   </body>
 
 </html>
