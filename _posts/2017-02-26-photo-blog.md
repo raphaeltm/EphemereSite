@@ -12,8 +12,6 @@ I’m going to start using this space to show and write about some of those imag
 
 Here’s the first set. These are going to be a few of my older shots, from when I first really started to get into photography.
 
-{% include wide_ad.html %}
-
 {% include image.html url="pups.jpeg" alt="pups" %}
 
 ## Emil and Lebo
@@ -34,7 +32,8 @@ I think every newbie photographer gets excited about flowers at some point. Of c
 
 {% include image.html url="elephants.jpeg" alt="elephants" %}
 
-Cute Elephants
+## Cute Elephants
+
 I love elephants. They’re such [wonderful, amazing animals](http://savetheelephants.org/). This shot was taken in Tarangire National Park in Tanzania. It was really interesting to watch the interaction between these two. I have absolutely no idea what the significance of the gesture is, but if anybody reading this does, I’d love to hear about it. Though I guess a still shot isn’t much to go on… If you’d like to buy a print of this shot, you can [get one here](http://photography.raphaeltm.com/Wildlife/i-jt62wsZ/buy).
 
 Thanks for reading and checking out my photos! If you’d like to support my photography, you can buy prints from my photography website [here](http://photography.raphaeltm.com/).

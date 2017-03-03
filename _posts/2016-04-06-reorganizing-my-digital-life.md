@@ -15,8 +15,6 @@ I had multiple WordPress installs going for myself, friends, and other people wh
 
 In the meantime I had grown/changed/whatever/etc.
 
-{% include wide_ad.html %}
-
 You see, when I first got the VPS, I wanted to build everything myself. If I used something that didn’t work quite the way I wanted it to, I would try to build it myself. I built all kinds of stuff that I thought was pretty cool.
 And I still think those projects were pretty cool.
 
@@ -29,8 +27,6 @@ So I got rid of my VPS. And I’m in the process of moving my stuff elsewhere.
 Here’s what I now think about this mess… I was building or modifying stuff to solve small problems, which is all very well and good as a learning experience, but it was taking time and energy away from the bigger problems that I wanted to solve, or projects I wanted to build.
 
 That’s not to discount the value of building stuff. I think building new stuff is amongst the best things one can do for personal and professional development. The more stuff you make, the better you are at being creative (obviously), and recognizing and solving problems. And building stuff is a great opportunity to learn about cool things.
-
-{% include wide_ad.html %}
 
 But I think I did a poor job of setting the context for these projects: instead of building on top of other stuff, I often built from scratch. Instead of working on bigger visions, I was working on minor irritations.
 

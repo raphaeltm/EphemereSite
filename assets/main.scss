@@ -235,3 +235,19 @@ article.post footer {
     font-weight: 700;
   }
 }
+
+.floatingad {
+  width: 100%;
+  &.right {
+    float: right;
+  }
+  &.left {
+    floast: left;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .floatingad {
+    width: 350px;
+  }
+}
