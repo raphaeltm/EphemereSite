@@ -10,7 +10,7 @@ url: ''
 twitter_username: raphaeltm_
 markdown: kramdown
 timezone: America/Vancouver
-paginate: 6
+paginate: 12
 paginate_path: "/page-:num/"
 disqus:
   shortname: ephemere-blog

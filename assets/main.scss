@@ -17,13 +17,17 @@ $grey-color-dark: darken($grey-color, 25%);
 
 $navbar-height: 60px;
 $container-lg: 800px;
-$container-md: 700px;
+$container-md: 750px;
 $navbar-brand-padding: 10px;
 
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 #logo {
   max-height: 35px;
+}
+
+.adcontainer {
+  text-align: center;
 }
 
 .navbar-brand {
@@ -150,7 +154,7 @@ article.excerpt {
     transform: rotate3d(1, 0, 0, 0deg);
     transition: all .2s ease-in;
     &:hover {
-      transform: rotate3d(1, 0, 0, 25deg);
+      transform: rotate3d(1, 0, 0, 12deg);
       transition: all .2s ease-in;
     }
   }
@@ -164,6 +168,23 @@ article.excerpt {
     padding: 5px;
     margin: 5px;
     cursor: pointer;
+    transition: all .2s ease-in;
+    small {
+      color: $grey-color-dark;
+      transition: all .2s ease-in;
+    }
+    h3 {
+      color: $brand-primary;
+      transition: all .2s ease-in;
+    }
+    &:hover {
+      background: $brand-primary;
+      transition: all .2s ease-in;
+      small, h3 {
+      transition: all .2s ease-in;
+        color: #ffffff;
+      }
+    }
   }
 }
 
