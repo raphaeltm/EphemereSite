@@ -20,7 +20,7 @@ After I finished the course, I wanted to try shooting one of these cameras, but 
 
 I started reading up about TLRs like the Rolleiflex Automat series and hoped that I might be able to find one at an affordable price and in decent shape. In the end I wasn’t able to find one, but I spent plenty of time looking at samples of images taken with a variety of cheap-ish medium format cameras. In the end, I gave up. But earlier this year I started shooting film again, as I describe in [this article](https://writing.raphaeltm.com/from-film-to-digital-and-back-again-7b342df17019#.jmn8saq0p).
 
-{% include left_image.html url="raffilm.jpeg" caption="That’s me, with the Nikon F90 I acquired earlier this year, when I decided to start shooting film again." %}
+{% include image.html url="raffilm.jpeg" caption="That’s me, with the Nikon F90 I acquired earlier this year, when I decided to start shooting film again." %}
 
 I started by shooting 35mm, but while looking for the best places to buy film in Vancouver, I came across Beau Photo. I noticed that they sold used medium format equipment, and got really excited: I figured I might finally be able to find a camera I could afford, and the store was just a few minutes walk from where I live. Dangerous, I know.
 
@@ -32,9 +32,9 @@ The first few shots were really exciting. I threw some Ilford FP4 in there and t
 
 To be honest, while the quality of the images is something I find really exciting, one of the most fun things about the camera is the fact that each roll is limited to 10 shots, and that it’s such a large, slow beast to work with.
 
-{% include left_image.html url="rafrz.jpeg" caption="The camera is quite large." %}
-
 Apparently the Mamiya RB67 and RZ67 are referred to as the “boat anchors” of photography, because they are large and heavy. The loud clunk of the mirror and shutter is so satisfying with this thing. I feel like I look completely ridiculous with this giant box around my neck, but it’s totally worth it because the experience of shooting with it is satisfying in and of itself. I even enjoy the fact that it doesn’t have a built-in light-meter, because I love that it forces me to slow down, pull out my handheld light meter, and really think about what I’m doing before I shoot.
+
+{% include image.html url="rafrz.jpeg" caption="The camera is quite large." %}
 
 In the end, though, the images are pretty awesome as well. And part of it goes back to something I mentioned at the beginning of this story: shallow depth of field for portraits. Recently, my girlfriend and I went up to Squamish, an hour or so north of Vancouver. I dragged the RZ67 with me and took a few shots of both her and the landscape.
 
