@@ -84,27 +84,28 @@ body {
 .img {
   transition: all 0.3s linear;
   max-width: 100%;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
   img {
     max-width: 100%;
-    // max-height: 500px;
     display: inline-block;
   }
   &.left {
     float: left;
-    width: 50%;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: $container-md / 2 + 100px;
+    margin-left: -100px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   &.right {
     float: right;
-    width: 50%;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: $container-md / 2 + 100px;
+    margin-right: -100px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   figcaption {
     font-size: 12px;
@@ -182,19 +183,23 @@ article.excerpt {
   }
 }
 
-@media only screen and (max-width: 600) {
+@media only screen and (max-width: $container-md + 100) {
   .img {
     &.left {
       float: left;
       width: 100%;
       margin-top: 40px;
       margin-bottom: 40px;
+      margin-left: 0;
+      margin-right: 0;
     }
     &.right {
       float: right;
       width: 100%;
       margin-top: 40px;
       margin-bottom: 40px;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
