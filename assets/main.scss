@@ -145,6 +145,7 @@ article.excerpt {
   
   h3 {
     margin: 5px;
+    font-size: 22px;
   }
   
   .excerpt-transform {
@@ -225,6 +226,7 @@ article.post footer {
   display: none;
   border: 2px solid $brand-primary;
   padding: 10px;
+  margin: 5px;
   font-size: 12px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -235,11 +237,13 @@ article.post footer {
 
 .floatingad {
   width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
   &.right {
     float: right;
   }
   &.left {
-    floast: left;
+    float: left;
   }
 }
 
@@ -247,4 +251,8 @@ article.post footer {
   .floatingad {
     width: 350px;
   }
+}
+
+em {
+  font-weight: 700;
 }
