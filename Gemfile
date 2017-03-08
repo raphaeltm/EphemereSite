@@ -20,8 +20,10 @@ gem "html-proofer"
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem "jekyll-paginate"
-   gem "sinatra-cross_origin"
-   gem 'jekyll-admin'
+   if not ENV['BUILD']
+      gem "sinatra-cross_origin"
+      gem 'jekyll-admin'
+   end
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
