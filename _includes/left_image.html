@@ -1,7 +1,1 @@
-{% capture media %}/media/{{include.url}}{% endcapture %}
-<figure class="img left">
-    <img src="{{ media | relative_url }}" alt="{{ include.alt | default: " image" }}">
-    {% if include.caption %}
-    <figcaption>{{include.caption}}</figcaption>
-    {% endif %}
-</figure>
+{% include image.html url=include.url alt=include.alt caption=include.caption position="left" %}

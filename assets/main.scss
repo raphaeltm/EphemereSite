@@ -84,16 +84,26 @@ body {
 .img {
   transition: all 0.3s linear;
   max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
+  &.large {
+    width: 878px;
+    max-width: 878px;
+    margin-left: -75px;
+  }
+  figcaption {
+    margin-top: 10px;
+  }
   img {
     max-width: 100%;
     display: inline-block;
   }
   &.left {
     float: left;
-    width: $container-md / 2 + 100px;
+    width: $container-md / 1.65 + 100px;
     margin-left: -100px;
     margin-right: 30px;
     margin-top: 30px;
@@ -101,7 +111,7 @@ body {
   }
   &.right {
     float: right;
-    width: $container-md / 2 + 100px;
+    width: $container-md / 1.65 + 100px;
     margin-right: -100px;
     margin-left: 30px;
     margin-top: 30px;
@@ -183,8 +193,16 @@ article.excerpt {
   }
 }
 
-@media only screen and (max-width: $container-md + 100) {
+@media only screen and (max-width: $container-md + 200) {
   .img {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    &.large {
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
     &.left {
       float: left;
       width: 100%;
@@ -269,4 +287,16 @@ article {
 
 em {
   font-weight: 700;
+}
+
+.instagram-media.instagram-media-rendered {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.embedly-card {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
 }

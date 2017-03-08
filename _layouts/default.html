@@ -1,24 +1,153 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
 
-  {% include head.html %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body>
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Crimson+Text:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ " /feed.xml " | relative_url }}">
+  <script type="text/javascript" src="{{ '/bower_components/jquery/dist/jquery.min.js' | relative_url }}"></script>
+  <script type="text/javascript" src="{{ '/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js' | relative_url }}"></script>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-7702690531661278",
+      enable_page_level_ads: true
+    });
+  </script>
+  <script type="text/javascript">
+    ! function() {
+      var analytics = window.analytics = window.analytics || [];
+      if (!analytics.initialize)
+        if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
+        else {
+          analytics.invoked = !0;
+          analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"];
+          analytics.factory = function(t) {
+            return function() {
+              var e = Array.prototype.slice.call(arguments);
+              e.unshift(t);
+              analytics.push(e);
+              return analytics
+            }
+          };
+          for (var t = 0; t < analytics.methods.length; t++) {
+            var e = analytics.methods[t];
+            analytics[e] = analytics.factory(e)
+          }
+          analytics.load = function(t) {
+            var e = document.createElement("script");
+            e.type = "text/javascript";
+            e.async = !0;
+            e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(e, n)
+          };
+          analytics.SNIPPET_VERSION = "4.0.0";
+          analytics.load("hmWTE1y3Q7FmXg8P4Sm0Yy36Bd2ezPHm");
+          analytics.page();
+        }
+    }();
+  </script>
+</head>
 
-    {% include header.html %}
 
-    <main class="container" aria-label="Content">
-      <div class="row">
-        <div class="col-xs-12">
-          {{ content }}
+<body>
+  <header class="site-header" role="banner">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+          <a class="navbar-brand" href="{{ '/' | relative_url }}">
+            <img src="{{ '/apple-touch-icon-120x120.png' | relative_url }}" alt="éphémère logo">
+            <span id="blog-name">{{site.title}}</span>
+          </a>
         </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            {% for my_page in site.pages %} {% if my_page.title %}
+            <li>
+              <a class="page-link hvr-underline-from-center" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            </li>
+            {% endif %} {% endfor %}
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
       </div>
-    </main>
+    </nav>
+  </header>
 
-    {% include footer.html %}
+  <main class="container" aria-label="Content">
+    <div class="row">
+      <div class="col-xs-12">
+        {{ content }}
+      </div>
+    </div>
+  </main>
 
-    <script type="text/javascript" src="{{ '/bower_components/blockadblock/blockadblock.js' | relative_url }}"></script>
-    <script type="text/javascript" src="{{ '/assets/main.js' | relative_url }}"></script>
-  </body>
+  <footer id="main-footer" class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-3">
+        <ul class="social-media-list">
+          <li>{{ site.title | escape }}</li>
+          <li>Subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %} {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/raphaeltm_"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"></path></svg>
+          </span><span class="username">raphaeltm_</span></a>
+          </li>
+          {% endif %} {% if site.email %}
+          <li>
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </li>
+          {% endif %}
+          <li><a href="https://ephemerecreative.ca">Our Services</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-12 col-sm-5">
+        <p>{{ site.description | escape }}</p>
+      </div>
+
+      <div class="col-xs-12">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> Text content of the éphémère blog is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a>
+        <br> Images are not licensed and remain the property of éphémère.
+      </div>
+
+      <div class="col-xs-12">
+        <br> {% include footer_desktop_ad.html %} {% include mobile_only_banner_ad.html %}
+        <br>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script type="text/javascript" src="{{ '/bower_components/blockadblock/blockadblock.js' | relative_url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/main.js' | relative_url }}"></script>
+</body>
 
 </html>

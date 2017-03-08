@@ -18,7 +18,7 @@ I ended up doing my undergrad in Computation Arts at Concordia University, in Mo
 
 After I finished the course, I wanted to try shooting one of these cameras, but it was too late to borrow one from school: I no longer was allowed to borrow equipment from the photography department. I assumed that these cameras were as wildly expensive as the digital medium format cameras. It turns out, though, that they weren’t. They still weren’t cheap (is photography ever?), but they weren’t going for twenty grand or more. Instead they seemed to range between 500 and a couple thousand bucks.
 
-I started reading up about TLRs like the Rolleiflex Automat series and hoped that I might be able to find one at an affordable price and in decent shape. In the end I wasn’t able to find one, but I spent plenty of time looking at samples of images taken with a variety of cheap-ish medium format cameras. In the end, I gave up. But earlier this year I started shooting film again, as I describe in [this article](https://writing.raphaeltm.com/from-film-to-digital-and-back-again-7b342df17019#.jmn8saq0p).
+I started reading up about TLRs like the Rolleiflex Automat series and hoped that I might be able to find one at an affordable price and in decent shape. In the end I wasn’t able to find one, but I spent plenty of time looking at samples of images taken with a variety of cheap-ish medium format cameras. In the end, I gave up. But earlier this year I started shooting film again, as I describe in [this article]({% link _posts/2016-07-16-from-film-to-digital-and-back-again.md %}).
 
 {% include image.html url="raffilm.jpeg" caption="That’s me, with the Nikon F90 I acquired earlier this year, when I decided to start shooting film again." %}
 
