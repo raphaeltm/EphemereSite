@@ -23,6 +23,9 @@ exclude:
 - vendor
 - Gemfile
 - Gemfile.lock
+algolia:
+  application_id: 'NO0ERQGCSX'
+  index_name:     'Pages'
 defaults:
   -
     scope:

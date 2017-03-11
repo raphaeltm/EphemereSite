@@ -16,3 +16,4 @@ deployment:
     branch: master
     commands:
       - aws s3 sync _site s3://blog.raphaeltm.com --delete
+      - bundle exec jekyll algolia push 
