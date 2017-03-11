@@ -21,6 +21,7 @@ group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem "jekyll-paginate"
    gem 'jekyll-sitemap'
+   gem 'algoliasearch-jekyll'
    if not ENV['BUILD']
       gem "sinatra-cross_origin"
       gem 'jekyll-admin'
