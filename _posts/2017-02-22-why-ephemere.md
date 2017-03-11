@@ -8,6 +8,8 @@ So... why is all this stuff called éphémère?
 
 Well, to start, éphémère is French for ephemeral, though I'm guessing most people already figured that out. The choice of French is because my parents and I have always spoken French at home, and even though I live in a primarily English-speaking environment, I like to remind myself of my francophone side. To be *completely* honest though, I also found it amusing, because of the popular tendency to tie "French" to "art" and "design." It just seemed like a fun marketing ploy on top of my more personal reasons.
 
+{% include image.html url="banner.png" %}
+
 So why ephemeral?
 
 I think a lot about digital media and aesthetics, and I find it both exciting and sad that so many experiences, especially digital ones, are fleeting. We go to websites that often took people hundreds of hours to put together, laugh at a cat doing something weird, and move on. We see something that catches our attention, click share in the hopes that someone else might enjoy it (or for the dopamine kick we get when someone "likes" it), and forget about it.

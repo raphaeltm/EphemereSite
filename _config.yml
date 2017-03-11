@@ -6,7 +6,7 @@ description: |
   web development, media, design, art, the internet, and potatoes are all 
   considered on-topic.
 baseurl: ''
-url: ''
+url: 'https://blog.ephemerecreative.ca'
 twitter_username: raphaeltm_
 markdown: kramdown
 timezone: America/Vancouver
@@ -17,6 +17,7 @@ disqus:
 gems:
 - jekyll-feed
 - jekyll-paginate
+- jekyll-sitemap
 exclude:
 - vendor
 - Gemfile
