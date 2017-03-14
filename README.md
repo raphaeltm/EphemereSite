@@ -1,5 +1,3 @@
-# éphémère blog
+# Team Kraf
 
-The blog can be [found here](https://blog.raphaeltm.com).
-
-Blog 
+TeamKraf.ca

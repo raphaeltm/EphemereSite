@@ -4,12 +4,8 @@ layout: page
 permalink: "/about/"
 ---
 
-This is the glorious, majestic, and (obviously) enthralling [éphémère](https://ephemerecreative.ca) blog.
+This is Team Kraf.
 
-Find out more about the services I offer [over here](https://raphaeltm.com).
+Artists. Entrepreneurs. Cool kids.
 
-Subscribe to the podcast [over here](https://podcast.raphaeltm.com).
-
-Find all the cool products you need to get a startup off the ground [over here](https://i.justneedto.com).
-
-Watch all the *super cool* videos I make [over here](https://www.youtube.com/channel/UCRpNWssBjgcvPdhg_94mgIw)
+Team Kraf is **Kristen Lawson** and **Raphaël Titsworth-Morin**

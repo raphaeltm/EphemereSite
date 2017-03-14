@@ -1,19 +1,16 @@
 ---
-title: "the éphémère blog"
+title: "Team Kraf"
 email: hello@ephemerecreative.com
 description: |
-  A blog about creative media and a few other things. Photography, 
-  web development, media, design, art, the internet, and potatoes are all 
-  considered on-topic.
+  Art projects and other stuff by Team Kraf: Kristen Lawson and Raphaël Titsworth-Morin
 baseurl: ''
-url: 'https://blog.ephemerecreative.ca'
-twitter_username: raphaeltm_
+url: 'https://teamkraf.ca'
 markdown: kramdown
 timezone: America/Vancouver
 paginate: 12
 paginate_path: "/page-:num/"
 disqus:
-  shortname: ephemere-blog
+  shortname: TeamKraf
 gems:
 - jekyll-feed
 - jekyll-paginate
@@ -24,9 +21,9 @@ exclude:
 - Gemfile
 - Gemfile.lock
 algolia:
-  application_id: 'NO0ERQGCSX'
+  application_id: '9172RJ579Y'
   index_name:     'Pages'
-  search_key: 'caa9bd43697e772760e65465e64100e5'
+  search_key: '33679d03b0bed26d31c6f71219d5feff'
 defaults:
   -
     scope:

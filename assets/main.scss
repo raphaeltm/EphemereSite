@@ -6,7 +6,7 @@ $font-size-base: 17px;
 $navbar-default-bg: #ffffff;
 $text-color: #111;
 $background-color: #fdfdfd;
-$brand-primary: #32dc78;
+$brand-primary: #d86ef1;
 
 $grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -39,6 +39,7 @@ $navbar-brand-padding: 10px;
 
 body {
   padding-top: $navbar-height + ($navbar-brand-padding * 2);
+  transition: background 5s linear;
 }
 
 
@@ -156,11 +157,11 @@ article.excerpt {
   }
   
   .excerpt-transform {
-    transform: rotate3d(1, 0, 0, 0deg);
-    transition: all .2s ease-in;
+    transform: rotate3d(1, 0, 0, 0deg) rotate3d(0, 1, 0, 0deg);
+    transition: all 2s ease-in;
     &:hover {
-      transform: rotate3d(1, 0, 0, 12deg);
-      transition: all .2s ease-in;
+      transform: rotate3d(1, 0, 0, 20deg) rotate3d(0, 1, 0, 30deg);
+      transition: all .3s ease-in;
     }
   }
   
@@ -170,6 +171,7 @@ article.excerpt {
     overflow: hidden;
     color: $brand-primary;
     border: 4px solid $brand-primary;
+    border-radius: 30px;
     padding: 5px;
     margin: 5px;
     cursor: pointer;
@@ -295,4 +297,32 @@ article {
 .embedly-card {
   margin-top: 30px !important;
   margin-bottom: 30px !important;
+}
+
+.bg-red {
+  background: #FFEEEE;
+}
+
+.bg-green {
+  background: #EEFFEE;
+}
+
+.bg-blue {
+  background: #EEEEFF;
+}
+
+.bg-yellow {
+  background: #FFFFEE;
+}
+
+.bg-purple {
+  background: #FFEEFF;
+}
+
+.bg-aqua {
+  background: #EEFFFF;
+}
+
+.bg-white {
+  background: #FFFFFF;
 }
