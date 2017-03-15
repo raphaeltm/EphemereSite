@@ -15,5 +15,5 @@ deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync _site s3://teamkraf.ca --delete
+      - aws s3 sync _site s3://raphaeltm.com --delete
       - bundle exec jekyll algolia push 

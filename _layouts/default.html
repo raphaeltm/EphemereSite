@@ -1,64 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en " }}">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Crimson+Text:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" />
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{'/feed.xml'|relative_url}}">
-  <script type="text/javascript" src="{{ '/bower_components/jquery/dist/jquery.min.js' | relative_url }}"></script>
-  <script type="text/javascript" src="{{ '/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js' | relative_url }}"></script>
-  <script type="text/javascript" src="{{ '/bower_components/algoliasearch/dist/algoliasearch.min.js' | relative_url }}"></script>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-51846115-10', 'auto');
-  ga('send', 'pageview');
-</script>
-</head>
-
-
+{% include head.html %}
 <body>
-  <header class="site-header" role="banner">
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-          <a class="navbar-brand" href="{{ '/' | relative_url }}">
-            <img src="{{ '/apple-touch-icon-120x120.png' | relative_url }}" alt="éphémère logo">
-            <span id="blog-name">{{site.title}}</span>
-          </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            {% for my_page in site.pages %} {% if my_page.title %}
-            <li>
-              <a class="page-link hvr-underline-from-center" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            </li>
-            {% endif %} {% endfor %}
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-    </nav>
-  </header>
+  {% include header.html %}
 
   <main class="container" aria-label="Content">
     <div class="row">
@@ -67,32 +11,9 @@
       </div>
     </div>
   </main>
-
-  <footer id="main-footer" class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
-        <ul class="social-media-list">
-          <li>&copy; {{ site.title | escape }}</li>
-          <li>Subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></li>
-        </ul>
-      </div>
-
-      <div class="col-xs-12 col-sm-6 text-right hidden-xs">
-        <p>{{ site.description | escape }}</p>
-        
-        <p>Website by <a href="https://ephemerecreative.ca" target="_blank">éphémère</a></p>
-      </div>
-
-      <div class="col-xs-12 col-sm-6 visible-xs-block">
-        <p>{{ site.description | escape }}</p>
-        
-        <p>Website by <a href="https://ephemerecreative.ca" target="_blank">éphémère</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Go to www.addthis.com/dashboard to customize your tools --> 
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58c756d7df4f89ba"></script> 
+  
+  {% include footer.html %}
+  
   <script type="text/javascript" src="{{ '/assets/main.js' | relative_url }}"></script>
 </body>
 

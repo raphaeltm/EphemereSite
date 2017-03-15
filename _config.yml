@@ -1,19 +1,16 @@
 ---
-title: "Team Kraf"
+title: "éphémère"
 email: hello@ephemerecreative.com
 description: |
-  Art projects and other stuff by Team Kraf: Kristen Lawson and Raphaël Titsworth-Morin
+  éphémère is creative media design and development
 baseurl: ''
-url: 'https://teamkraf.ca'
+url: 'https://ephemerecreative.ca'
 markdown: kramdown
 timezone: America/Vancouver
 paginate: 12
 paginate_path: "/page-:num/"
-disqus:
-  shortname: TeamKraf
 gems:
 - jekyll-feed
-- jekyll-paginate
 - jekyll-sitemap
 - algoliasearch-jekyll
 exclude:
@@ -21,9 +18,9 @@ exclude:
 - Gemfile
 - Gemfile.lock
 algolia:
-  application_id: '9172RJ579Y'
+  application_id: 'DLHXPTT5NA'
   index_name:     'Pages'
-  search_key: '33679d03b0bed26d31c6f71219d5feff'
+  search_key: '3394e5fa8eb27b68cf88da2cbed4cee1'
 defaults:
   -
     scope:

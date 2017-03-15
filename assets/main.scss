@@ -6,7 +6,7 @@ $font-size-base: 17px;
 $navbar-default-bg: #ffffff;
 $text-color: #111;
 $background-color: #fdfdfd;
-$brand-primary: #d86ef1;
+$brand-primary: #32dc78;
 
 $grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -265,13 +265,6 @@ article.post footer {
   }
   &.left {
     float: left;
-  }
-}
-
-article {
-  p {
-    font-family: 'Crimson Text', serif;
-    font-size: 22px;
   }
 }
 

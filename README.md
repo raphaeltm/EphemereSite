@@ -1,3 +1,1 @@
-# Team Kraf
-
-TeamKraf.ca
+# the [éphémère](https://ephemerecreative.ca) website
