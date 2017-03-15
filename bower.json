@@ -1,10 +1,10 @@
 {
   "name": "ephemereblog",
-  "homepage": "https://blog.ephemerecreative.ca",
+  "homepage": "https://ephemerecreative.ca",
   "authors": [
     "raphael titsworth-morin <raphael@raphaeltm.com>"
   ],
-  "description": "the ephemere blog",
+  "description": "the ephemere site",
   "main": "",
   "license": "not sure",
   "private": true,

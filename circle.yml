@@ -4,6 +4,9 @@ machine:
     BUILD: true
 
 dependencies:
+  pre:
+    - npm install -g bower
+    - bower install
   post:
     - bundle exec jekyll build
 
