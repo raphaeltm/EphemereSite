@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
-    "algoliasearch": "^3.21.1"
+    "animate.css": "^3.5.2",
+    "algoliasearch": "^3.22.1"
   }
 }

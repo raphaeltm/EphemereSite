@@ -2,5 +2,5 @@ _site
 .sass-cache
 .jekyll-metadata
 .idea
-.bower_components
 .c9
+bower_components
