@@ -1,0 +1,17 @@
+<a href="{{include.url}}">
+    <div class="colour-tile-wrapper pointer">
+        <div class="colour-tile">
+            <div class="colour-tile-transform {{include.direction|default: 'right'}} {{include.colour|default: 'purple'}}-border">
+            </div>
+        </div>
+        <div class="colour-tile pass-through">
+            <div class="vc-outer">
+                <div class="vc-inner">
+                    <div class="padding-20 {{include.colour|default: 'purple'}}-text">
+                        <h2>{{include.text}}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>

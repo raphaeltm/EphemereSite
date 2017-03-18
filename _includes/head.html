@@ -5,14 +5,20 @@
 
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/bower_components/animate.css/animate.min.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{'/feed.xml'|relative_url}}">
+    
     <script type="text/javascript" src="{{ '/bower_components/jquery/dist/jquery.min.js' | relative_url }}"></script>
     <script type="text/javascript" src="{{ '/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js' | relative_url }}"></script>
     <script type="text/javascript" src="{{ '/bower_components/algoliasearch/dist/algoliasearch.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/bower_components/raphael/raphael.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/bower_components/p5.js/lib/p5.min.js' | relative_url }}"></script>
     <script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/hmWTE1y3Q7FmXg8P4Sm0Yy36Bd2ezPHm/analytics.min.js"></script>
     <script type="text/javascript">
         ! function() {

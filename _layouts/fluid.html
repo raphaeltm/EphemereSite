@@ -4,7 +4,7 @@
 <body {% if page.hideHeader %}style="padding-top: 0;"{% endif %}>
   {% include header.html %}
 
-  <main class="container" aria-label="Content">
+  <main class="container-fluid" aria-label="Content">
     <div class="row">
       <div class="col-xs-12">
         {{ content }}
@@ -15,8 +15,6 @@
   {% include footer.html %}
   
   <script type="text/javascript" src="{{ '/assets/main.js' | relative_url }}"></script>
-  <script type="text/javascript" src="{{ '/assets/title.js' | relative_url }}"></script>
-  <script type="text/javascript" src="{{ '/assets/viz.js' | relative_url }}"></script>
   {% if page.scripts %}
     {% for script in page.scripts %}
       <script type="text/javascript" src="{{ script | relative_url }}"></script>

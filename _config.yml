@@ -2,13 +2,27 @@
 title: "éphémère"
 email: hello@ephemerecreative.com
 description: |
-  éphémère is creative media design and development
+
+  éphémère is creative media design and development. We design and build websites and apps, help startups build MVPs, and construct brands.
+  
+  We are based in beautiful, Vancouver, British Columbia.
 baseurl: ''
 url: 'https://ephemerecreative.ca'
 markdown: kramdown
 timezone: America/Vancouver
-paginate: 12
-paginate_path: "/page-:num/"
+collections:
+  services:
+    output: true
+    permalink: /:collection/:path/
+  products:
+    output: true
+    permalink: /:collection/:path/
+  partners:
+    output: true
+    permalink: /:collection/:path/
+  landings:
+    output: true
+    permalink: /:collection/:path/
 gems:
 - jekyll-feed
 - jekyll-sitemap
@@ -22,10 +36,13 @@ algolia:
   index_name:     'Pages'
   search_key: '3394e5fa8eb27b68cf88da2cbed4cee1'
 defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts"
+  - scope:
+      path: ""
+      type: ["pages", "posts"]
     values:
-      layout: "post"
-      comments: true
+      permalink: pretty
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "services"
+    values:
+      layout: "service"

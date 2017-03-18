@@ -1,20 +1,39 @@
-<footer id="main-footer" class="container">
+<footer id="main-footer" class="container" {% if page.hideFooter %}style="display:none;"{% endif %}>
     <div class="row">
+        <div class="col-xs-12">
+            <hr>
+        </div>
+        
         <div class="col-xs-12 col-sm-6">
-            <ul class="social-media-list">
+            <ul>
                 <li>&copy; {{ site.title | escape }}</li>
-                <li>Subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></li>
+                <li>{{ site.description | newline_to_br }}</li>
+                <!--<li>Subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></li>-->
             </ul>
         </div>
 
-        <div class="col-xs-12 col-sm-6 text-right hidden-xs">
-            <p>{{ site.description | escape }}</p>
-
-            <p>Website by <a href="https://ephemerecreative.ca" target="_blank">éphémère</a></p>
+        <div class="col-xs-12 col-sm-3">
+            <h6 class="list-header">Links</h6>
+            <br>
+            <ul>
+                {% for link in site.data.links %}
+                    <li>
+                        <a href="{{link[1].url}}" title="{{link[1].description}}">{{link[0] | capitalize}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
-
-        <div class="col-xs-12 col-sm-6 visible-xs-block">
-            <p>{{ site.description | escape }}</p>
+        
+        <div class="col-xs-12 col-sm-3">
+            <h6 class="list-header">Products</h6>
+            <br>
+            <ul>
+                {% for product in site.products %}
+                    <li>
+                        <a href="{{product.link}}">{{product.title | title}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 </footer>

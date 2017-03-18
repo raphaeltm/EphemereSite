@@ -1,28 +1,86 @@
 --- 
+title: éphémère is creative media
 layout: default 
+hideMenu: true
 ---
 
-<!-- This loops through the paginated posts -->
+<section class="row">
+    <div class="col-xs-12 col-sm-6">
+        {% assign url='/services/web/' | relative_url %}
+        {% include colour_tile.html url=url switch=true text='Web Design & Development' direction='right' %}
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <h3>Beautiful Web Design</h3>
+        <p>We build beautiful websites with the latest design trends in mind, using the best technologies to match <i>your</i> needs.</p>
+        <p>Need to show off <i>your business</i> online? We'll make sure you not only have a gorgeous site to show your customers, but we'll also help you set up your "presence" across all the platforms that are most important to your business.</p>
+        
+        <h3>Awesome Web Apps</h3>
+        <p>If you can dream it up, we can make it happen. From real-time collaborative tools, to location-aware visualizations. You imagine it, we'll build it.</p>
+    </div>
+</section>
+
 <div class="row">
-    {% for post in paginator.posts %}
-    <article class="excerpt col-xs-12 col-sm-4" title="{{post.title}}">
-        <div class="excerpt-transform">
-            <a href="{{ post.url }}">
-                <div class="excerpt-container">
-                    <small class="date">{{ post.date | date_to_long_string }}</small>
-                    <h3>{{ post.title | truncate: 40 }}</h3>
-                </div>
-            </a>
-        </div>
-    </article>
-    {% endfor %}
-<div class="clearfix"></div>
+    <div class="col-xs-12">
+        <div class="spacer-30"></div>
+        <hr>
+        <div class="spacer-30"></div>
+    </div>
 </div>
 
-<!-- Pagination links -->
-<div class="article-pagination">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous button">Previous</a> {% endif %}
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next button">Next</a> {% endif %}
+<section class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-push-6">
+        {% assign url='/services/consulting/' | relative_url %}
+        {% include colour_tile.html url=url switch=true text='Consulting' direction='left' %}
+    </div>
+    <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+        <h3>Get a new project off the ground</h3>
+        <p>If you're starting to build a new online product and aren't sure how to get started, we will make sure you have a solid plan to move forward.</p>
+        <p>We will help you find the right products, infrastructure, and tools to move your project forward with the greatest possibility of success.</p>
+        <h3>Supercharge an existing project</h3>
+        <p>Do you have a project that's off the ground? Are you unsure how to move forward with it? We'll analyze what you've got so far and help you find the best path forward.</p>
+    </div>
+</section>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="spacer-30"></div>
+        <hr>
+        <div class="spacer-30"></div>
+    </div>
 </div>
+
+<section class="row">
+    <div class="col-xs-12 col-sm-6">
+        {% assign url='/services/apps/' | relative_url %}
+        {% include colour_tile.html url=url switch=true text='Mobile Apps' direction='right' %}
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <h3>Apps for everyone</h3>
+        <p>Come with an idea and we'll turn it into a cross-platorm app that will work on iOS and Android. We'll help determine the appropriate technologies to build your app, and the backend infrastructure to support it.</p>
+    </div>
+</section>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="spacer-30"></div>
+        <hr>
+        <div class="spacer-30"></div>
+    </div>
+</div>
+
+<section class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-push-6">
+        {% assign url='/services/photography/' | relative_url %}
+        {% include colour_tile.html url=url switch=true text='Photography' direction='left' %}
+    </div>
+    <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+        <h3>Custom Photos</h3>
+        <p>If you need custom images for your website, app, or other projects, we will take them for you.</p>
+        
+        <h3>Product Photos</h3>
+        <p>If you have a physical product and you can't quite get the photos you want, let us know and we'll provide you with beautiful images of your handiwork.</p>
+        
+        <h3>Fine Art Prints</h3>
+        <p>Do you need beautiful prints to decorate a space? Check out our fine art photos <a href="https://photography.ephemerecreative.ca">here</a>.</p>
+</section>
+

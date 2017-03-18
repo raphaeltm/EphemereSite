@@ -1,0 +1,12 @@
+blog:
+    url: https://blog.ephemerecreative.ca
+    description: the éphémère blog
+photography:
+    url: https://photography.ephemerecreative.ca
+    description: éphémère photography
+podcast:
+    url: https://podcast.ephemerecreative.ca 
+    description: the éphémère podcast
+videos:
+    url: https://www.youtube.com/channel/UCRpNWssBjgcvPdhg_94mgIw
+    description: éphémère videos

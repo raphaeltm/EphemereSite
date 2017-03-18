@@ -1,0 +1,10 @@
+--- 
+layout: default 
+title: Partners
+permalink: /partners/
+menuPosition: 3
+--- 
+
+{% for partner in site.partners %}
+  <h3><a href="{{partner.url}}">{{partner.title}}</a></h3>
+{% endfor %}

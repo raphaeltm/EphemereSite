@@ -1,0 +1,10 @@
+--- 
+layout: default 
+title: Products
+permalink: /products/
+menuPosition: 2
+--- 
+
+{% for product in site.products %}
+  <h3><a href="{{product.url}}">{{product.title}}</a></h3>
+{% endfor %}
