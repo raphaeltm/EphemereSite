@@ -15,6 +15,34 @@ var sketch = function(p){
         y: s.$viz.height() / 2
     };
     
+    s.Circle = function(x, y){
+        var circle = this;
+        circle.x = x;
+        circle.y = y;
+        circle.o = 0;
+        circle.r = 30;
+        circle.tx = x;
+        circle.ty = y;
+        circle.to = 0;
+        circle.fill = [255, 255, 255, 0];
+        circle.stroke = [50, 220, 120, 0];
+    }
+    
+    s.Circle.prototype.draw = function(){
+        var circle = this;
+        p.push();
+        circle.x = circle.x + ((circle.tx - circle.x) / 5);
+        circle.y = circle.y + ((circle.ty - circle.y) / 5);
+        circle.o = circle.o + ((circle.to - circle.o) / 5);
+        circle.stroke[3] = circle.o;
+        circle.fill[3] = circle.o;
+        p.fill(circle.fill);
+        p.stroke(circle.stroke);
+        p.ellipseMode(p.CENTER);
+        p.ellipse(circle.x, circle.y, circle.r, circle.r);
+        p.pop();
+    }
+    
     /**
      * The Particle object for the points.
      * @param x
@@ -33,6 +61,7 @@ var sketch = function(p){
             b: 120,
             a: 220
         };
+        particle.circle = new s.Circle(x, y);
         var baseSize = 100;
         var randomSize = 45;
         particle.points = [];
@@ -53,20 +82,12 @@ var sketch = function(p){
     
     s.Particle.prototype.draw = function(){
         var particle = this;
-        var c = particle.stroke;
         p.push();
-        if(s.linkIndex !== null){
-            p.colorMode(p.HSB);
-            p.stroke((360 / s.$menuLinks.length) * s.linkIndex, 100, 100);
-            p.strokeWeight(particle.strokeWeight * 2);
-            particle.rotation += particle.rotationSpeed * 1.2;
-        }
-        else {
-            p.stroke(c.r, c.g, c.b, c.a);
-            p.strokeWeight(particle.strokeWeight);
-            p.noFill();
-            particle.rotation += particle.rotationSpeed;
-        }
+        particle.rotation += particle.rotationSpeed;
+        p.strokeWeight(particle.strokeWeight);
+        var c = particle.stroke;
+        p.stroke(c.r, c.g, c.b, c.a);
+        p.noFill();
         var baseVector = p.createVector(this.x, this.y);
         var drawingPoints = [];
         for(var i = 0; i < particle.points.length; i++){
@@ -91,13 +112,17 @@ var sketch = function(p){
         p.endShape();
         
         if(s.linkIndex !== null){
-            p.colorMode(p.RGB);
-            p.fill(255,255,255);
             var pt = drawingPoints[s.linkIndex];
-            p.ellipseMode(p.CENTER);
-            p.ellipse(pt.x, pt.y, 30, 30);
+            particle.circle.tx = pt.x;
+            particle.circle.ty = pt.y;
+            particle.circle.to = 255;
         }
-        
+        else {
+            particle.circle.tx = particle.x;
+            particle.circle.ty = particle.y;
+            particle.circle.to = 0;
+        }
+        particle.circle.draw();
         p.pop();
     }
     
@@ -133,7 +158,7 @@ var sketch = function(p){
     p.setup = function() {
         s.canvas = p.createCanvas(s.$viz.width(), s.$viz.height());
         var t = s.getTarget();
-        s.mouseParticle = new s.Particle(t.x, t.y);
+        s.blob = new s.Particle(t.x, t.y);
     }
     
     /**
@@ -142,9 +167,9 @@ var sketch = function(p){
     p.draw = function() {
         p.clear();
         var t = s.getTarget();
-        s.mouseParticle.x = t.x;
-        s.mouseParticle.y = t.y;
-        s.mouseParticle.draw();
+        s.blob.x = t.x;
+        s.blob.y = t.y;
+        s.blob.draw();
     }
     
     /**
