@@ -4,9 +4,12 @@ blog:
 photography:
     url: https://photography.ephemerecreative.ca
     description: éphémère photography
-podcast:
-    url: https://podcast.ephemerecreative.ca 
-    description: the éphémère podcast
 videos:
     url: https://www.youtube.com/channel/UCRpNWssBjgcvPdhg_94mgIw
     description: éphémère videos
+mentorship:
+    url: https://www.codementor.io/raphaeltm
+    description: codementor
+podcast:
+    url: https://podcast.ephemerecreative.ca 
+    description: the éphémère podcast

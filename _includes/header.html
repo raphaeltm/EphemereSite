@@ -1,16 +1,3 @@
-<!--<header class="site-header" role="banner" {% if page.hideHeader %}style="display:none;"{% endif %}>-->
-<!--    <nav class="navbar navbar-default navbar-fixed-top">-->
-<!--        <div class="container">-->
-<!--            <div class="navbar-header">-->
-<!--                <a class="navbar-brand menu-trigger" href="#">-->
-<!--                    <img src="{{ '/apple-touch-icon-120x120.png' | relative_url }}" alt="éphémère logo" title="éphémère creative media">-->
-<!--                    menu-->
-<!--                </a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </nav>-->
-<!--</header>-->
-
 <header class="page-title text-center animated fadeInDown">
     <div class="page-title-content">
         <br>
@@ -19,7 +6,7 @@
             <br>
             <img src="{{'android-chrome-192x192.png' | relative_url}}" id="title-logo" />
         </a>
-        <h1 class="animated fadeInUp">{{ page.title }}</h1>
+        <h1 class="animated fadeInUp">{{ page.title }} {% if page.subtitle %}<br><small>{{page.subtitle}}</small>{% endif %}</h1>
     </div>
 </header>
 
@@ -41,7 +28,7 @@
                     {% endif %} 
                 {% endfor %}
                 <li>
-                    <a href="https://blog.ephemerecreative.ca" class="menulink">Blog</a>
+                    <a href="https://blog.ephemerecreative.ca" class="menulink">Things we say</a>
                 </li>
                 <li>
                     <a href="#" id="menu-close" class="menu-trigger">Close</a>

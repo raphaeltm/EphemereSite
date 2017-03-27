@@ -21,6 +21,8 @@
     "algoliasearch": "^3.22.1",
     "p5.js": "p5js#^0.5.7",
     "aos": "^2.1.1",
-    "raphael": "^2.2.7"
+    "raphael": "^2.2.7",
+    "gsap": "^1.19.1",
+    "scrollmagic": "^2.0.5"
   }
 }

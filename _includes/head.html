@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title | escape }} | {{ site.title | escape }} {% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
@@ -53,5 +53,27 @@
                     analytics.page();
                 }
         }();
+    </script>
+    <script>
+        analytics.ready(function(){
+          drift.on('ready',function(api){
+              window.driftApi = api;
+              var DRIFT_CHAT_SELECTOR = '.drift-open-chat';
+              $(DRIFT_CHAT_SELECTOR).on('click', function(e){
+                  e.preventDefault();
+                  var $this = $(this);
+                  var msg = $this.attr('data-msg');
+                  if(msg){
+                      api.openChat({
+                          "message": msg
+                      });
+                  }
+                  else {
+                      api.openChat();
+                  }
+                  return false;
+              });
+          });
+        });
     </script>
 </head>

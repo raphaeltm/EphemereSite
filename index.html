@@ -1,86 +1,75 @@
 --- 
-title: éphémère is creative media
+title: éphémère is creative digital media
+subtitle: by Raphaël Titsworth-Morin
 layout: default 
 hideMenu: true
+scripts:
+    - "/bower_components/gsap/src/minified/TweenMax.min.js"
+    - "/bower_components/gsap/src/minified/TimelineMax.min.js"
+    - "/bower_components/gsap/src/minified/easing/EasePack.min.js"
+    - "/bower_components/gsap/src/minified/plugins/CSSPlugin.min.js"
+    - "/bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"
+    - "/bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"
+    - "/assets/home.js"
 ---
 
-<section class="row">
-    <div class="col-xs-12 col-sm-6">
-        {% assign url='/services/web/' | relative_url %}
-        {% include colour_tile.html url=url switch=true text='Web Design & Development' direction='right' %}
-    </div>
-    <div class="col-xs-12 col-sm-6">
-        <h3>Beautiful Web Design</h3>
-        <p>We build beautiful websites with the latest design trends in mind, using the best technologies to match <i>your</i> needs.</p>
-        <p>Need to show off <i>your business</i> online? We'll make sure you not only have a gorgeous site to show your customers, but we'll also help you set up your "presence" across all the platforms that are most important to your business.</p>
-        
-        <h3>Awesome Web Apps</h3>
-        <p>If you can dream it up, we can make it happen. From real-time collaborative tools, to location-aware visualizations. You imagine it, we'll build it.</p>
-    </div>
-</section>
-
 <div class="row">
-    <div class="col-xs-12">
-        <div class="spacer-30"></div>
-        <hr>
-        <div class="spacer-30"></div>
+    <div class="col-xs-12 col-sm-6 col-sm-push-3 text-center">
+        <div class="scene1">
+            <h2 class="home-beautiful">We build beautiful experiences.<br>
+                <small class="home-scroll-down">&#x25BC;</small></h2>
+            <div class="slide-container slides-1">
+                <div class="slide slide-1">
+                    <div class="slide-image">
+                        <img src="{{'/images/webxhdpi.png'}}">
+                    </div>
+                    <h4>We make gorgeous websites and web apps.</h4>
+                </div>
+                <div class="slide slide-2">
+                    <div class="slide-image">
+                        <img src="{{'/images/phonexhdpi.png'}}">
+                    </div>
+                    <h4>We create sweet mobile apps.</h4>
+                </div>
+                <div class="slide slide-3">
+                    <div class="slide-image">
+                        <img src="{{'/images/dynamicxhdpi.png'}}">
+                    </div>
+                    <h4>We build awesome backend applications to power your services.</h4>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<section class="row">
-    <div class="col-xs-12 col-sm-6 col-sm-push-6">
-        {% assign url='/services/consulting/' | relative_url %}
-        {% include colour_tile.html url=url switch=true text='Consulting' direction='left' %}
-    </div>
-    <div class="col-xs-12 col-sm-6 col-sm-pull-6">
-        <h3>Get a new project off the ground</h3>
-        <p>If you're starting to build a new online product and aren't sure how to get started, we will make sure you have a solid plan to move forward.</p>
-        <p>We will help you find the right products, infrastructure, and tools to move your project forward with the greatest possibility of success.</p>
-        <h3>Supercharge an existing project</h3>
-        <p>Do you have a project that's off the ground? Are you unsure how to move forward with it? We'll analyze what you've got so far and help you find the best path forward.</p>
-    </div>
-</section>
-
-<div class="row">
-    <div class="col-xs-12">
-        <div class="spacer-30"></div>
-        <hr>
-        <div class="spacer-30"></div>
-    </div>
-</div>
-
-<section class="row">
-    <div class="col-xs-12 col-sm-6">
-        {% assign url='/services/apps/' | relative_url %}
-        {% include colour_tile.html url=url switch=true text='Mobile Apps' direction='right' %}
-    </div>
-    <div class="col-xs-12 col-sm-6">
-        <h3>Apps for everyone</h3>
-        <p>Come with an idea and we'll turn it into a cross-platorm app that will work on iOS and Android. We'll help determine the appropriate technologies to build your app, and the backend infrastructure to support it.</p>
-    </div>
-</section>
-
-<div class="row">
-    <div class="col-xs-12">
-        <div class="spacer-30"></div>
-        <hr>
-        <div class="spacer-30"></div>
+<div class="row" id="trigger2">
+    <div class="col-xs-12 col-sm-6 col-sm-push-3 text-center">
+        <div class="scene2">
+            <h2 class="home-beautiful">We can help you turn your ideas into reality.</h2>
+            <div class="slide-container slides-1">
+                <div class="slide slide-1">
+                    <div class="slide-image">
+                        <img src="{{'/images/liftoffxhdpi.png'}}">
+                    </div>
+                    <h4>We'll help you get a project off the ground...</h4>
+                </div>
+                <div class="slide slide-2">
+                    <div class="slide-image">
+                        <img src="{{'/images/superchargexhdpi.png'}}">
+                    </div>
+                    <h4>Or supercharge an existing project!</h4>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<section class="row">
-    <div class="col-xs-12 col-sm-6 col-sm-push-6">
-        {% assign url='/services/photography/' | relative_url %}
-        {% include colour_tile.html url=url switch=true text='Photography' direction='left' %}
+<div class="row" id="trigger3">
+    <div class="col-xs-12 text-center">
+        <h3>Are you ready to get your next project off the ground?</h3>
+        <p>Do you need a website, have an idea for an app, or need to build a web app? We can help you move forward with those projects immediately.</p>
+        <a href="{{service.url|relative_url}}" class="btn btn-default">Learn More</a>
+        <a href="#" class="drift-open-chat btn btn-primary" data-msg="{{service.driftMsg|default:'Let me know what we can do for you!'}}">Let's talk!</a>
+        <div class="spacer-150"></div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-sm-pull-6">
-        <h3>Custom Photos</h3>
-        <p>If you need custom images for your website, app, or other projects, we will take them for you.</p>
-        
-        <h3>Product Photos</h3>
-        <p>If you have a physical product and you can't quite get the photos you want, let us know and we'll provide you with beautiful images of your handiwork.</p>
-        
-        <h3>Fine Art Prints</h3>
-        <p>Do you need beautiful prints to decorate a space? Check out our fine art photos <a href="https://photography.ephemerecreative.ca">here</a>.</p>
-</section>
-
+</div>
