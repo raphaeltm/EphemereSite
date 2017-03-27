@@ -27,7 +27,7 @@ scene1.addTo(controller);
 var scene2 = new ScrollMagic.Scene({
     "triggerElement": "#trigger2",
     "duration": 1000,
-    "offset": ($(window).height()/2 + 30)
+    "offset": ($(window).height()/2)
 });
 var timeline2 = new TimelineMax();
 timeline2.add(TweenMax.fromTo('.scene2 .slide-1', 2, {opacity: 0, y: 300}, {opacity: 1, y: 0}));
