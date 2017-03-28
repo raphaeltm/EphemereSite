@@ -16,12 +16,12 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass": "^3.3.7",
-    "animate.css": "^3.5.2",
-    "algoliasearch": "^3.22.1",
-    "p5.js": "p5js#^0.5.7",
-    "raphael": "^2.2.7",
-    "gsap": "^1.19.1",
-    "scrollmagic": "^2.0.5"
+    "bootstrap-sass": "3.3.7",
+    "animate.css": "3.5.2",
+    "algoliasearch": "3.22.1",
+    "p5.js": "p5js#0.5.7",
+    "raphael": "2.2.7",
+    "gsap": "1.19.1",
+    "scrollmagic": "2.0.5"
   }
 }
