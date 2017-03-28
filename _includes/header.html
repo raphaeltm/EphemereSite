@@ -1,14 +1,15 @@
 <header class="page-title text-center animated fadeInDown">
     <div class="page-title-content">
         <br>
-        <a href="#" class="menu-trigger">
-            <span class="menu-text">menu</span>
-            <br>
+        <a href="{{'/'|relative_url}}">
             <img src="{{'android-chrome-192x192.png' | relative_url}}" id="title-logo" alt="éphémère logo" />
         </a>
         <h1 class="animated fadeInUp">{{ page.title }} {% if page.subtitle %}<br><small>{{page.subtitle}}</small>{% endif %}</h1>
     </div>
+    <a href="#" class="menu-trigger" id="main-menu-trigger">≡</a>
 </header>
+<a href="#" class="menu-trigger"><div id="main-menu-trigger-bg"></div></a>
+
 
 <div id="menu" class="closed">
     <div id="viz"></div>
@@ -28,7 +29,10 @@
                     {% endif %} 
                 {% endfor %}
                 <li>
-                    <a href="https://blog.ephemerecreative.ca" class="menulink">Things we say</a>
+                    <a href="https://blog.ephemerecreative.ca" class="menulink">What we say</a>
+                </li>
+                <li>
+                    <a href="#" class="menulink drift-open-chat" data-msg="Hi! Let me know what we can help you with :)">Talk to us</a>
                 </li>
                 <li>
                     <a href="#" id="menu-close" class="menu-trigger">Close</a>

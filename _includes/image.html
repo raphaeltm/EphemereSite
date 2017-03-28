@@ -1,11 +1,10 @@
-{% capture media %}/media/{{include.url}}{% endcapture %}
 <figure class="img {{include.position|default:''}} {{include.size|default:''}}">
     {% if include.link %}
         <a href="{{include.link}}" target="_blank">
-            <img src="{{ media | relative_url }}" alt="{{ include.alt | default: 'image' }}">
+            <img src="{{ include.url | relative_url }}" alt="{{ include.alt | default: 'image' }}">
         </a>
     {% else %}
-        <img src="{{ media | relative_url }}" alt="{{ include.alt | default: 'image' }}">
+        <img src="{{ include.url | relative_url }}" alt="{{ include.alt | default: 'image' }}">
     {% endif %}
     {% if include.caption %}
         <figcaption>{{include.caption}}</figcaption>

@@ -4,11 +4,27 @@
             <hr>
         </div>
         
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-sm-3">
             <ul>
                 <li>&copy; {{ site.title | escape }}</li>
                 <li>{{ site.description | newline_to_br }}</li>
                 <!--<li>Subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></li>-->
+            </ul>
+        </div>
+        
+        <div class="col-xs-12 col-sm-3">
+            <h6 class="list-header">Pages</h6>
+            <br>
+            <ul>
+                <li>
+                    <a href="{{'/services/'|relative_url}}">What we do</a>
+                </li>
+                <li>
+                    <a href="{{'/products/'|relative_url}}">What we make</a>
+                </li>
+                <li>
+                    <a href="https://blog.ephemerecreative.ca">What we say</a>
+                </li>
             </ul>
         </div>
 
@@ -16,6 +32,9 @@
             <h6 class="list-header">Links</h6>
             <br>
             <ul>
+                <li>
+                    <a href="#" class="drift-open-chat" data-msg="Hi! Let me know what we can help you with :)">Contact us</a>
+                </li>
                 {% for link in site.data.links %}
                     <li>
                         <a href="{{link[1].url}}" title="{{link[1].description}}">{{link[0] | capitalize}}</a>

@@ -9,6 +9,8 @@ $background-color: #fdfdfd;
 $brand-primary: #32dc78;
 $brand-accent: #A933FF;
 
+$imgoffset: 100px;
+
 $grey-color: #aaa;
 $grey-color-light: lighten($grey-color, 20%);
 $grey-color-dark: darken($grey-color, 25%);
@@ -40,6 +42,10 @@ html, body {
 
 .btn {
   border-width: 3px;
+  &.lrg {
+    font-size: 25px;
+    padding: 12px 20px;
+  }
 }
 
 .btn-primary {
@@ -99,9 +105,9 @@ body {
   margin-bottom: 30px;
   text-align: center;
   &.large {
-    width: 878px;
-    max-width: 878px;
-    margin-left: -75px;
+    width: $container-md;
+    max-width: $container-md;
+    margin-left: -#{$imgoffset/2};
   }
   figcaption {
     margin-top: 10px;
@@ -112,16 +118,16 @@ body {
   }
   &.left {
     float: left;
-    width: $container-md / 1.65 + 100px;
-    margin-left: -100px;
+    width: $container-md / 3 + $imgoffset;
+    margin-left: -$imgoffset;
     margin-right: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
   &.right {
     float: right;
-    width: $container-md / 1.65 + 100px;
-    margin-right: -100px;
+    width: $container-md / 3 + $imgoffset;
+    margin-right: -$imgoffset;
     margin-left: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -136,6 +142,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 30px;
   margin-bottom: 15px;
+  font-style: italic;
+  small {
+    font-style: normal;
+  }
 }
 
 
@@ -165,6 +175,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px !important;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .embedly-card {
@@ -432,16 +446,39 @@ h1, h2, h3, h4, h5, h6 {
   color: $grey-color;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-style: italic;
-}
-
 .home-scroll-down {
   webkit-animation-duration: 3s;
   animation-duration: 3s;
   webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   
+}
+
+#main-menu-trigger {
+  position: fixed;
+  top: 6px;
+  right: 17px;
+  font-size: 55px;
+  line-height: 50px;
+  // text-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
+
+#main-menu-trigger-bg {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+  background: $brand-primary;
+  z-index: -10;
 }
 
 // SLIDEIMAGES
@@ -474,7 +511,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media only screen and (max-width: $container-md + 200) {
+@media only screen and (max-width: $container-md + (2*$imgoffset)) {
   .img {
     max-width: 100%;
     margin-left: 0;
@@ -510,5 +547,9 @@ h1, h2, h3, h4, h5, h6 {
     h1 {
       font-size: 28px;
     }
+  }
+  .btn {
+    width: 100%;
+    margin: 15px 0px;
   }
 }

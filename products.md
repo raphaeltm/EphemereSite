@@ -1,11 +1,20 @@
 --- 
 layout: default 
-title: Things we make
+title: What we make
 permalink: /products/
 menuPosition: 2
 --- 
 
-**We provide services, but we also make things on our own time.** Check out some of our in-house projects below.
+
+
+
+<div class="text-center">
+    <img class="inline-block" src="{{'/images/starxhdpi.png'|relative_url}}" style="width: 150px">
+    <h1>We provide services, but also build our own products.
+    <br> <small>Check out some of our projects below.</small></h1>
+    <hr>
+</div>
+
 
 <div class="row">
   <div class="col-xs-12">

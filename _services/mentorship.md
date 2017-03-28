@@ -1,6 +1,6 @@
 ---
 title: Mentorship
-layout: service
+layout: thin
 menuPosition: 4
 shortDescription: |
     ### Learn how to build your product 
