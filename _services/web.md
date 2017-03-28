@@ -15,7 +15,7 @@ driftMsg: Interested in web development and design? What can I do for you?
 ---
 
 <div class="text-center">
-    <img class="inline-block" src="{{'/images/Heartxhdpi.png'|relative_url}}" style="width: 100px">
+    <img class="inline-block" src="{{'/images/Heartxhdpi.png'|relative_url}}" style="width: 100px" alt="heart">
     <h1>We &hearts; building the web</h1>
     <hr>
 </div>

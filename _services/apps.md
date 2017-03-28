@@ -10,7 +10,7 @@ driftMsg: Need a mobile app? What can I do for you?
 ---
 
 <div class="text-center">
-    <img class="inline-block" src="{{'/images/phonexhdpi.png'|relative_url}}" style="width: 100px">
+    <img class="inline-block" src="{{'/images/phonexhdpi.png'|relative_url}}" style="width: 100px" alt="mobile">
     <h1>We build sweet mobile apps. Fast.</h1>
     <hr>
 </div>

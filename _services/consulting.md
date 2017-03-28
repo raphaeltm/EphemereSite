@@ -12,7 +12,7 @@ driftMsg: Trying to figure out what you need to move forward with a project? Wha
 ---
 
 <div class="text-center">
-    <img class="inline-block" src="{{'/images/superchargexhdpi.png'|relative_url}}" style="width: 200px">
+    <img class="inline-block" src="{{'/images/superchargexhdpi.png'|relative_url}}" style="width: 200px" alt="supercharged">
     <h1>We'll move your project forward fast, with our consulting.</h1>
     <hr>
 </div>
@@ -28,7 +28,7 @@ If you have already tested your market, we can help you plan your tech stack, de
 <a href="#" class="drift-open-chat btn btn-primary" data-msg="Tell me more about your company! What are you building and what stage are you at?">How can we help your startup?</a>
 
 <div class="text-center">
-    <img class="inline-block" src="{{'/images/liftoffxhdpi.png'|relative_url}}" style="width: 120px">
+    <img class="inline-block" src="{{'/images/liftoffxhdpi.png'|relative_url}}" style="width: 120px" alt="rocket launch">
 </div>
 
 ## Other Projects

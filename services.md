@@ -6,7 +6,7 @@ menuPosition: 1
 --- 
 
 <div class="text-center">
-    <img class="inline-block" src="{{'/images/Heartxhdpi.png'|relative_url}}" style="width: 150px">
+    <img class="inline-block" src="{{'/images/Heartxhdpi.png'|relative_url}}" style="width: 150px" alt="heart">
     <h1>We build beautiful websites and apps.</h1>
     <h3>We can also help with branding and UX design by the wonderful people at <a href="http://letspivot.com/">Pivot</a>.</h3>
     <hr>
