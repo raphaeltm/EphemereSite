@@ -37,7 +37,3 @@ timeline2.add(TweenMax.to('.scene2 .slide-2', 2, {opacity: 0, y: -300}));
 scene2.setPin('.scene2');
 scene2.setTween(timeline2);
 scene2.addTo(controller);
-
-$(document).on('click', function(e){
-    console.log(e);
-});
