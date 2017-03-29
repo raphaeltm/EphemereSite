@@ -13,43 +13,45 @@
         </div>
         
         <div class="col-xs-12 col-sm-3">
-            <h6 class="list-header">Pages</h6>
+            <h6 class="list-header">Services</h6>
             <br>
             <ul>
-                <li>
-                    <a href="{{'/services/'|relative_url}}">What we do</a>
-                </li>
-                <li>
-                    <a href="{{'/products/'|relative_url}}">What we make</a>
-                </li>
-                <li>
-                    <a href="https://blog.ephemerecreative.ca">What we say</a>
-                </li>
+                {% assign services = site.services | sort: 'menuPosition' %}
+                
+                {% for service in services %}
+                    {% assign url=service.url | relative_url %}
+                    <li>
+                        <a href="{{url}}">{{service.title}}</a>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
 
         <div class="col-xs-12 col-sm-3">
-            <h6 class="list-header">Links</h6>
+            <h6 class="list-header">Products</h6>
             <br>
             <ul>
-                <li>
-                    <a href="#" class="drift-open-chat" data-msg="Hi! Let me know what we can help you with :)">Contact us</a>
-                </li>
-                {% for link in site.data.links %}
+                {% assign products = site.products | sort: 'menuPosition' %}
+                {% for product in products %}
                     <li>
-                        <a href="{{link[1].url}}" title="{{link[1].description}}">{{link[0] | capitalize}}</a>
+                        <a href="{{product.link}}">{{product.title | title}}</a>
                     </li>
                 {% endfor %}
             </ul>
         </div>
         
         <div class="col-xs-12 col-sm-3">
-            <h6 class="list-header">Products</h6>
+            <h6 class="list-header">Links</h6>
             <br>
             <ul>
-                {% for product in site.products %}
+                <li>
+                    <a href="#" class="drift-open-chat" data-msg="Hi! Let me know what we can help you with :)">
+                        <b>Contact us</b>
+                    </a>
+                </li>
+                {% for link in site.data.links %}
                     <li>
-                        <a href="{{product.link}}">{{product.title | title}}</a>
+                        <a href="{{link[1].url}}" title="{{link[1].description}}">{{link[0] | capitalize}}</a>
                     </li>
                 {% endfor %}
             </ul>

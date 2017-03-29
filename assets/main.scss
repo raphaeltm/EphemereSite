@@ -481,6 +481,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -10;
 }
 
+.scene-title {
+  position: relative;
+  z-index: 20;
+}
+
 // SLIDEIMAGES
 .slide-image {
   img {
@@ -501,6 +506,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   opacity: 0;
+  z-index: 0;
 }
 
 @for $i from 1 through 40 {

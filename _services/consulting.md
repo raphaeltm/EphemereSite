@@ -27,8 +27,11 @@ If you have already tested your market, we can help you plan your tech stack, de
 
 <a href="#" class="drift-open-chat btn btn-primary" data-msg="Tell me more about your company! What are you building and what stage are you at?">How can we help your startup?</a>
 
+<div class="spacer-50"></div>
+
 <div class="text-center">
-    <img class="inline-block" src="{{'/images/liftoffxhdpi.png'|relative_url}}" style="width: 120px" alt="rocket launch">
+    <img class="inline-block" src="{{'/images/liftoffxhdpi.png'|relative_url}}" style="width: 130px" alt="rocket launch">
+    <hr>
 </div>
 
 ## Other Projects

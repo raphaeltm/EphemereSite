@@ -17,7 +17,7 @@ driftMsg: I can help you learn what you need! Get in touch to schedule a 1-on-1 
     <hr>
 </div>
 
-**...by teaching you how to build badass web and mobile apps.**
+**...by teaching you how to build great web and mobile apps.**
 
 I can teach you how to build web sites, web apps, and mobile apps using a number of technologies, but what I like to focus on is building and deploying Python applications on Amazon's AWS infrastructure.
 
