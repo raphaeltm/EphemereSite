@@ -13,7 +13,7 @@ driftMsg: Trying to figure out what you need to move forward with a project? Wha
 
 <div class="text-center">
     <img class="inline-block" src="{{'/images/superchargexhdpi.png'|relative_url}}" style="width: 200px" alt="supercharged">
-    <h1>We'll move your project forward fast, with our consulting.</h1>
+    <h1>Move your project forward with your consulting services.</h1>
     <hr>
 </div>
 
