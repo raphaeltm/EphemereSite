@@ -32,7 +32,7 @@ menuPosition: 1
           {% if service.title == "Mentorship" %}
             <a href="https://www.codementor.io/raphaeltm?utm_source=github&utm_medium=button&utm_term=raphaeltm&utm_campaign=github"><img src="https://cdn.codementor.io/badges/i_am_a_codementor_dark.svg" alt="I am a codementor" style="max-width:100%"/></a>
           {% else %}
-            <!--<a href="{{service.url|relative_url}}" class="btn btn-default">Learn More</a>-->
+            <a href="{{service.url|relative_url}}" class="btn btn-default lrg">Learn More</a>
             <a href="#" class="drift-open-chat lrg btn btn-primary" data-msg="{{service.driftMsg|default:'Let me know what we can do for you!'}}">Let's talk!</a>
           {% endif %}
         </p>
