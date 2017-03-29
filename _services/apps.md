@@ -11,7 +11,7 @@ driftMsg: Need a mobile app? What can I do for you?
 
 <div class="text-center">
     <img class="inline-block" src="{{'/images/phonexhdpi.png'|relative_url}}" style="width: 100px" alt="mobile">
-    <h1>We build sweet mobile apps. Fast.</h1>
+    <h1>We build sweet mobile apps.</h1>
     <hr>
 </div>
 
@@ -19,7 +19,7 @@ driftMsg: Need a mobile app? What can I do for you?
 
 We build mobile apps using a variety of cutting-edge technologies. Our toolbox allows us to build cross-platform apps, so that you get the best app you can get, as fast as possible.
 
-## Powered by Giants
+## Powered by giants
 
 If your app needs to connect to the internet, we'll build or setup a backend for you on the infrastructure of tech giants like Google and Amazon.
 
