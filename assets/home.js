@@ -19,7 +19,8 @@ var scene1 = new ScrollMagic.Scene({
     "offset": ($(window).height()/2) - 30
 });
 var timeline1 = new TimelineMax();
-timeline1.add(TweenMax.fromTo('.scene1 .slide-0', 1, {opacity: 1}, {opacity: 0, ease: Linear.easeNone}));
+timeline1.add(TweenMax.fromTo('.scene1 .slide-0', 0.5, {opacity: 1}, {opacity: 0, ease: Linear.easeNone}));
+timeline1.add(TweenMax.to('.scene1 .scene-title', 0.5, {opacity: 0}))
 timeline1.add(TweenMax.fromTo('.scene1 .slide-1', 2, {opacity: 0, y: 300}, {opacity: 1, y: 0, ease: Linear.easeNone}), "-=1");
 timeline1.add(TweenMax.fromTo('.scene1 .slide-1 img', 2, {rotationY: twistInDeg}, {rotationY: 0}), "-=2");
 timeline1.add(TweenMax.to('.scene1 .slide-1', 2, {opacity: 0, y: -300, ease: Linear.easeNone}));
@@ -39,6 +40,7 @@ var scene2 = new ScrollMagic.Scene({
     "offset": ($(window).height()/2) - 30
 });
 var timeline2 = new TimelineMax();
+timeline2.add(TweenMax.to('.scene2 .scene-title', 0.5, {opacity: 0}))
 timeline2.add(TweenMax.fromTo('.scene2 .slide-1', 2, {opacity: 0, y: 300}, {opacity: 1, y: 0, ease: Linear.easeNone}));
 timeline2.add(TweenMax.fromTo('.scene2 .slide-1 img', 2, {rotationY: twistInDeg}, {rotationY: 0}), "-=2");
 timeline2.add(TweenMax.to('.scene2 .slide-1', 2, {opacity: 0, y: -300, ease: Linear.easeNone}));
@@ -48,3 +50,17 @@ timeline2.add(TweenMax.to('.scene2 .slide-2', 2, {opacity: 0, y: -300, ease: Lin
 scene2.setPin('.scene2');
 scene2.setTween(timeline2);
 scene2.addTo(controller);
+
+var scene3 = new ScrollMagic.Scene({
+    "triggerElement": "#trigger3",
+    "duration": 500,
+    "offset": $('#trigger3').height()/2
+});
+var timeline3 = new TimelineMax();
+timeline3.add(TweenMax.fromTo('.scene3 img', 0.5, {opacity: 0, y: -100}, {opacity: 1, y: 0}));
+timeline3.add(TweenMax.fromTo('.scene3 .scene-text', 0.5, {opacity: 0, y: 100}, {opacity: 1, y: 0}), "-=0.5");
+timeline3.add(TweenMax.fromTo('.scene3 .btn1', 0.5, {opacity: 0}, {opacity: 1}), "-=0.25");
+timeline3.add(TweenMax.fromTo('.scene3 .btn2', 0.5, {opacity: 0}, {opacity: 1}), "-=0.5");
+scene3.setPin('.scene3');
+scene3.setTween(timeline3);
+scene3.addTo(controller);
