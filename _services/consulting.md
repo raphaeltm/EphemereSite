@@ -23,7 +23,7 @@ driftMsg: Trying to figure out what you need to move forward with a project? Wha
 
 Have you already started to figure out your market, but aren't sure how to start testing your product? We'll help you build a plan to test your assumptions with a super low tech MVP. We'll set you up with the appropriate technologies to gather data from your MVP users and we'll help you determine the right technologies to move forward from there.
 
-If you have already have a basic MVP, we can help you refine it, and move your tech to the next level. If you need help figuring out the right infrastructure and deployment strategies, how to 
+If you have already have a basic MVP, we can help you refine it, and move your tech to the next level. If you need help figuring out the right infrastructure and deployment strategies, we can help you out.
 
 <a href="#" class="drift-open-chat btn btn-primary" data-msg="Tell me more about your company! What are you building and what stage are you at?">How can we help your startup?</a>
 
