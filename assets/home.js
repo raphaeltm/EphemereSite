@@ -51,16 +51,24 @@ scene2.setPin('.scene2');
 scene2.setTween(timeline2);
 scene2.addTo(controller);
 
+var offset3 = 0;
+var triggerHeight = $('#trigger3').height();
+var windowHeight = $(window).height();
+
+if(triggerHeight < windowHeight){
+    offset3 = -(triggerHeight / 5);
+}
+
 var scene3 = new ScrollMagic.Scene({
     "triggerElement": "#trigger3",
     "duration": 500,
-    "offset": $('#trigger3').height()/2
+    "offset": offset3
 });
 var timeline3 = new TimelineMax();
 timeline3.add(TweenMax.fromTo('.scene3 img', 0.5, {opacity: 0, y: -100}, {opacity: 1, y: 0}));
 timeline3.add(TweenMax.fromTo('.scene3 .scene-text', 0.5, {opacity: 0, y: 100}, {opacity: 1, y: 0}), "-=0.5");
 timeline3.add(TweenMax.fromTo('.scene3 .btn1', 0.5, {opacity: 0}, {opacity: 1}), "-=0.25");
 timeline3.add(TweenMax.fromTo('.scene3 .btn2', 0.5, {opacity: 0}, {opacity: 1}), "-=0.5");
-scene3.setPin('.scene3');
+// scene3.setPin('.scene3');
 scene3.setTween(timeline3);
 scene3.addTo(controller);

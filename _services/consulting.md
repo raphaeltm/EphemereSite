@@ -19,11 +19,11 @@ driftMsg: Trying to figure out what you need to move forward with a project? Wha
 
 ## Early Stage Startups
 
-*We can help you figure out a strategy to move your company forward.*
+*We can help you figure out a strategy to move your company's tech forward.*
 
-We will help you find affordable strategies to gather information about your target market and reach out to potential users. You'll also get a plan on how to test your value prop, with a super low tech MVP, and we'll help you determine the right tech to move forward from your MVP.
+Have you already started to figure out your market, but aren't sure how to start testing your product? We'll help you build a plan to test your assumptions with a super low tech MVP. We'll set you up with the appropriate technologies to gather data from your MVP users and we'll help you determine the right technologies to move forward from there.
 
-If you have already tested your market, we can help you plan your tech stack, development process, and help you determine what the best infrastructure and services would be for your company. We'll give you an outside perspective on the best way to move your product forward.
+If you have already have a basic MVP, we can help you refine it, and move your tech to the next level. If you need help figuring out the right infrastructure and deployment strategies, how to 
 
 <a href="#" class="drift-open-chat btn btn-primary" data-msg="Tell me more about your company! What are you building and what stage are you at?">How can we help your startup?</a>
 
@@ -40,6 +40,6 @@ Do you have an idea for an app or website that you want to bring to fruition but
 
 Let us know.
 
-We'll help you determine what resources will be necessary for your project. We'll evaluate the best technologies for you, figure out what kind of people you'll need to hire, find the appropriate infrastructure on which to deploy your project, and lay out a plan for you to move forward.
+We'll help you determine what resources will be necessary for your project. We'll evaluate the best technologies for you, figure out what kind of people, if any, you'll need to hire, find the appropriate infrastructure on which to deploy your project, and lay out a plan for you to move forward.
 
 <a href="#" class="drift-open-chat btn btn-primary" data-msg="Tell me more about your company or project! What are you building?">How can we help you move forward?</a>
