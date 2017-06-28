@@ -457,10 +457,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #main-menu-trigger {
   position: fixed;
-  top: 6px;
+  top: 3px;
   right: 17px;
   font-size: 55px;
   line-height: 50px;
+  z-index: 2;
   // text-shadow: 0px 0px 8px rgba(0,0,0,0.5);
   text-decoration: none;
   &:hover {
@@ -473,13 +474,16 @@ h1, h2, h3, h4, h5, h6 {
 
 #main-menu-trigger-bg {
   position: fixed;
-  top: 5px;
-  right: 5px;
-  height: 55px;
-  width: 55px;
-  border-radius: 100%;
+  // top: 5px;
+  // right: 5px;
+  height: 60px;
+  // width: 55px;
+  // border-radius: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
   background: $brand-primary;
-  z-index: -10;
+  z-index: 1;
 }
 
 .scene-title {
