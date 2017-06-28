@@ -15,8 +15,11 @@
   {% include footer.html %}
   
   <script type="text/javascript" src="{{ '/assets/main.js' | relative_url }}"></script>
-  <script type="text/javascript" src="{{ '/assets/title.js' | relative_url }}"></script>
-  <script type="text/javascript" src="{{ '/assets/viz.js' | relative_url }}"></script>
+  
+  {% if false %}
+    <script type="text/javascript" src="{{ '/assets/title.js' | relative_url }}"></script>
+  {% endif %}
+  
   {% if page.scripts %}
     {% for script in page.scripts %}
       <script type="text/javascript" src="{{ script | relative_url }}"></script>

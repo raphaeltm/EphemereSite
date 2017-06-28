@@ -1,6 +1,6 @@
 --- 
 layout: default 
-title: What we make
+title: What I make
 permalink: /products/
 menuPosition: 2
 --- 
@@ -10,8 +10,8 @@ menuPosition: 2
 
 <div class="text-center">
     <img class="inline-block" src="{{'/images/starxhdpi.png'|relative_url}}" style="width: 150px" alt="star">
-    <h1>We provide services, but also build our own products.
-    <br> <small>Check out some of our projects below.</small></h1>
+    <h1>I provide services, but also build my own products.
+    <br> <small>Check out some of my projects below.</small></h1>
     <hr>
 </div>
 

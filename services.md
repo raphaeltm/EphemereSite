@@ -1,14 +1,14 @@
 --- 
 layout: default 
-title: What we do
+title: What I do
 permalink: /services/
 menuPosition: 1
 --- 
 
 <div class="text-center">
     <img class="inline-block" src="{{'/images/Heartxhdpi.png'|relative_url}}" style="width: 150px" alt="heart">
-    <h1>We build beautiful websites and apps.</h1>
-    <h3>We can also help with branding and UX design by the wonderful people at <a href="http://letspivot.com/">Pivot</a>.</h3>
+    <h1>I build beautiful websites and apps.</h1>
+    <h3>I can also help with branding and UX design with help from the wonderful people at <a href="http://letspivot.com/">Pivot</a>.</h3>
     <hr>
 </div>
 
@@ -33,7 +33,7 @@ menuPosition: 1
             <a href="https://www.codementor.io/raphaeltm?utm_source=github&utm_medium=button&utm_term=raphaeltm&utm_campaign=github"><img src="https://cdn.codementor.io/badges/i_am_a_codementor_dark.svg" alt="I am a codementor" style="max-width:100%"/></a>
           {% else %}
             <a href="{{service.url|relative_url}}" class="btn btn-default">Learn More</a>
-            <a href="#" class="drift-open-chat btn btn-primary" data-msg="{{service.driftMsg|default:'Let me know what we can do for you!'}}">Let's talk!</a>
+            <a href="#" class="drift-open-chat btn btn-primary" data-msg="{{service.driftMsg|default:'Let me know what I can do for you!'}}">Let's talk!</a>
           {% endif %}
         </p>
       </div>

@@ -20,7 +20,7 @@ $navbar-height: 60px;
 // $container-md: 728px;
 $navbar-brand-padding: 10px;
 $thick-borders: 15px;
-$page-title-height: 350px;
+$page-title-height: 260px;
 $border-radius-base: 0px;
 
 $btn-default-color: $grey-color;
@@ -79,7 +79,7 @@ html, body {
 }
 
 body {
-  padding-top: $page-title-height;
+  padding-top: $page-title-height + 50px;
   overflow: auto;
 }
 
@@ -263,6 +263,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-title {
+  background: $brand-primary;
   width: 100%;
   height: $page-title-height;
   position: absolute;

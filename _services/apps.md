@@ -5,22 +5,22 @@ menuPosition: 3
 shortDescription: |
     ### Apps for everyone
     
-    Come with an idea and we'll turn it into a cross-platorm app that will work on iOS and Android. We'll help determine the appropriate technologies to build your app, and the backend infrastructure to support it.
+    Come with an idea and I'll turn it into a cross-platorm app that will work on iOS and Android. I'll help determine the appropriate technologies to build your app, and the backend infrastructure to power it.
 driftMsg: Need a mobile app? What can I do for you?
 ---
 
 <div class="text-center">
     <img class="inline-block" src="{{'/images/phonexhdpi.png'|relative_url}}" style="width: 100px" alt="mobile">
-    <h1>We build sweet mobile apps.</h1>
+    <h1>I build sweet mobile apps.</h1>
     <hr>
 </div>
 
 ## iOS and Android
 
-We build mobile apps using a variety of cutting-edge technologies. Our toolbox allows us to build cross-platform apps, so that you get the best app you can get, as fast as possible.
+I build mobile apps using a variety of awesome technologies like React Native, Fuse, PhoneGap, or Xamarin, depending on what's best for you and your project. If you need completely native apps, I can get that done for you too.
 
-## Powered by giants
+## Super-Powered
 
-If your app needs to connect to the internet, we'll build or setup a backend for you on the infrastructure of tech giants like Google and Amazon.
+If your app needs a backend to store data, files, authenticate users, or anything else, I'll either set you up with a platform to handle all of those requirements, or build a custom backend if that's what's necessary.
 
 <a href="#" class="drift-open-chat btn btn-primary" data-msg="Tell me more about this app! What do you want to build?">Let's talk about apps!</a>
